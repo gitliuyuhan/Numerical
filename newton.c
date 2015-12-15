@@ -51,12 +51,12 @@ int main()
     for(i=0;i<4;i++)
     {
         r[i] = ratio(y,x,0,i);
-        printf("r[%d] = %f\n",i,r[i]);
+        printf("r[%d] = %.6f\n",i,r[i]);
     }
     printf("结果：\n");
     for(i = 0;i<7;i++)
     {
-        printf("P[%f] = %f\n",t[i],newton(x,r,t[i]));
+        printf("P[%f] = %.6f\n",t[i],newton(x,r,t[i]));
     }
     return 0;
 }
